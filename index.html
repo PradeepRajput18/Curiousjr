@@ -1,0 +1,37 @@
+<!-- Code by pradeep R
+Web developer  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dice-wrapper">
+            <img  id="die-1">
+        </div>
+        <p id="total"></p>
+        <div class="numbers">
+            <button class="num1" onclick="number(1)">1</button>
+            <button class="num1" onclick="number(2)">2</button>
+            <button class="num1" onclick="number(3)">3</button>
+            <button class="num1" onclick="number(4)">4</button>
+            <button class="num1" onclick="number(5)">5</button>
+            <button class="num1" onclick="number(6)">6</button>
+        </div>
+        <p id="Guess"></p>
+        <p id="Score"></p>
+        <p id="result"></p>
+        <button onclick="roll()">ROLL THE DICE</button>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
