@@ -59,7 +59,7 @@ function roll(){
             document.getElementById("result").innerHTML="Guess was Right!";
         }
         if(selected!=(dieOneValue+1) && selected!="Not selected"){
-            document.getElementById("result").innerHTML="Guess was Wrong! Try again";
+            document.getElementById("result").innerHTML="Guess was Wrong!";
         }
         document.querySelector("#Score").innerHTML = "Score : " + ( (score) );
 
@@ -68,3 +68,17 @@ function roll(){
     );
 }
 roll();
+
+function timers(p) {
+    t=p;
+    setInterval(() => {
+        document.getElementById("timer").innerHTML="The Dice will change in"+" "+t;
+        t=t-1
+    }, 1000);
+    
+}
+
+setInterval(() => {
+    roll();
+    timers(10);
+}, 10000);
